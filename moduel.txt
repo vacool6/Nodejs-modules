@@ -1,0 +1,14 @@
+
+In Node a module is a reusable piece of code that encapsulates related functionality and can be easily 
+imported into other parts of a program. Modules help in organizing code into smaller, 
+more manageable pieces and facilitate code reuse, modularity, and maintainability.
+
+There are two types of modules in Node.js:
+
+1. Core Modules: These are built-in modules provided by Node. They can be imported into your code using the 
+require function without specifying a path.
+
+2. User-Defined Modules: These are modules created by developers for specific functionalities or tasks. 
+User-defined modules can be created by writing JavaScript files containing the desired functionality and then 
+exporting it using module.exports or exports object. These modules can then be imported into other files 
+using the require function by specifying the path to the module file.
