@@ -7,6 +7,7 @@
 
 const http = require("http");
 const url = require("url");
+
 const PORT = 8080;
 
 let data = [];
@@ -19,7 +20,7 @@ let data = [];
 // http://localhost:8080/add-item -> Add item
 // => send data in body as json {}
 
-// http://localhost:8080/delete-item?id=abc -> Delete specific item
+// http://localhost:8080/remove-item?id=abc -> Delete specific item
 
 const server = http.createServer((req, res) => {
   const { method, url: reqUrl } = req;
@@ -70,7 +71,6 @@ const server = http.createServer((req, res) => {
     }
   } else {
     res.writeHead(404);
-    console.log(parsedUrl.query.id);
     res.end(JSON.stringify({ message: "Invalid request" }));
   }
 });
