@@ -1,0 +1,44 @@
+In Node, the http module is a core module that provides functionality to 
+create HTTP servers and clients. With this module, you can build web servers 
+that handle HTTP requests and send HTTP requests to other servers.
+
+* What can we do with this module?
+
+1. Create HTTP Server
+2. Handle Requests
+3. Send HTTP Requests
+4. HTTP Server Listening
+
+>>> Moving form http to express <<<
+
+Express.js is a web application framework for Node, built on top of the http 
+module. While the http module provides basic functionality for creating HTTP 
+servers and handling requests, Express.js simplifies and enhances the process 
+of building web applications.
+
+* What features we get out of the box in express?
+
+1. Routing 
+2. Middlewares
+3. Template Engines
+4. Error Handling
+5. Static File Serving
+6. Integration with Third-party Middleware
+7. Flexibility is its nature
+
+
+>>> Expectations out of these modules <<<
+
+CRUD operations (Create, Read, Update, Delete) are fundamental in server-side development, 
+regardless of the technology stack being used. In the context of Node.
+
+Overall, CRUD operations form the backbone of many Node.js applications, enabling developers 
+to build robust, scalable, and maintainable server-side solutions.
+
+* Other alternative to express : 
+
+1. Koa (https://koajs.com)
+2. Fastify (https://fastify.dev/docs/latest/Reference/HTTP2)
+3. Ember js (https://guides.emberjs.com/release/)
+
+  List goes on ...
