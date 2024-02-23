@@ -1,0 +1,74 @@
+
+1. Reading Files:
+
+fs.readFile(): Asynchronously reads the entire contents of a file.
+fs.readFileSync(): Synchronously reads the entire contents of a file.
+
+2. Writing to Files:
+
+fs.writeFile(): Asynchronously writes data to a file, replacing the file if it already exists.
+fs.writeFileSync(): Synchronously writes data to a file, replacing the file if it already exists.
+
+3. Working with Directories:
+
+fs.readdir(): Asynchronously reads the contents of a directory.
+fs.readdirSync(): Synchronously reads the contents of a directory.
+fs.mkdir(): Asynchronously creates a directory.
+fs.mkdirSync(): Synchronously creates a directory.
+fs.rmdir(): Asynchronously removes a directory.
+fs.rmdirSync(): Synchronously removes a directory.
+
+4. File Information:
+
+fs.stat(): Asynchronously gets the status of a file or directory.
+fs.statSync(): Synchronously gets the status of a file or directory.
+
+5. File Manipulation:
+
+fs.rename(): Asynchronously renames a file or directory.
+fs.renameSync(): Synchronously renames a file or directory.
+fs.unlink(): Asynchronously removes a file.
+fs.unlinkSync(): Synchronously removes a file.
+
+6. Watching for Changes:
+
+fs.watch(): Watches for changes to a file or directory.
+fs.watchFile(): Watches for changes to a file by periodically polling the file's status.
+
+7. Appending:
+
+fs.appendFile(): This function is used to asynchronously append data to a file.
+fs.appendFileSync(): This function is used to synchronously append data to a file.
+
+
+>>> Sync vs Asynchronous <<<
+
+1. With synchronous operations, the code execution blocks until the operation is complete. 
+This means that while the file is being read or written, the Node.js event loop is paused.
+Synchronous operations are simpler to use and may be suitable for small-scale operations 
+where blocking the event loop temporarily is not a concern. 
+
+However, they can negatively impact the performance of your application, especially in 
+scenarios where many I/O operations need to be performed concurrently.
+
+2. Asynchronous operations, on the other hand, do not block the event loop. Instead, they 
+allow other code to continue executing while the file operation is being performed in the 
+background.
+
+Asynchronous operations are preferred in Node.js for I/O-bound tasks because they allow 
+the application to remain responsive and handle multiple requests concurrently without 
+blocking other operations.
+
+In summary, the main difference between synchronous and asynchronous operations in the fs 
+example is how they handle the flow of code execution and whether they block the event 
+loop. Synchronous operations block the event loop until they are complete, while 
+asynchronous operations allow other code to continue executing while the file operations 
+are performed in the background.
+
+>>> NOTE <<<
+
+In asynchronous functions like those used with the Fetch API in JavaScript,
+the code inside the function is written synchronously, meaning it executes line by line in
+the order it's written. However, the function itself is marked as asynchronous, 
+which means it doesn't block the execution of other code while it's waiting for some 
+asynchronous operation to complete.
