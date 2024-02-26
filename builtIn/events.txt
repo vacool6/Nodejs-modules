@@ -1,0 +1,33 @@
+In Node, an EventEmitter is a class that facilitates communication between objects in 
+a publish/subscribe pattern. It allows you to bind multiple functions (listeners) to a 
+single event, and when that event is emitted, all the bound functions are called 
+synchronously.
+
+>>> publish/subscribe <<<
+
+The publish/subscribe pattern is commonly used in event-driven architectures, message 
+brokers, and systems where loose coupling between components is desired. It's 
+especially useful in distributed systems where components may be spread across 
+different machines or networks.
+
+* Parts
+
+Publishers: They are responsible for sending messages.
+
+Subscribers: They are receivers. Subscribers do not need to know about the publishers, 
+they only need to know which topics they want to subscribe to.
+
+Topics or Channels: These are the categories into which messages are organized. 
+Subscribers can choose to listen to messages from specific topics or channels.
+
+Decoupling: One of the key benefits of the publish/subscribe pattern is decoupling. 
+Publishers and subscribers are not aware of each other's existence. This allows for 
+more flexible and scalable systems, as components can be added or removed without 
+impacting others.
+
+Asynchronicity: Publish/subscribe systems are typically asynchronous. Publishers and 
+subscribers operate independently, allowing for high concurrency and performance.
+
+Event Emitters in Node, EventEmitter is often used to implement the publish/subscribe 
+pattern. It allows objects to subscribe to events (topics) and emit events 
+(publish messages) without needing direct knowledge of each other.
