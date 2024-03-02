@@ -1,0 +1,27 @@
+This is a basic express app where we perform CRUD operations on a fake DB. 
+
+Endpoints:
+
+> GET: Retrieving data from server
+
+* http://localhost:8080/products
+* http://localhost:8080/product/{product-name}
+
+> POST: Doing something in server
+
+ This would require us to require middleware in order to parse the incoming body.
+ app.use(express.json()); // For parsing JSON
+ app.use(express.urlencoded({ extended: true })); // For parsing Form data
+
+ * http://localhost:8080/product
+   body : {"name":"","quantity":"","price":""}
+
+> PUT : 
+ * http://localhost:8080/product/{id}
+   body : {"name":"","quantity":"","price":""}
+
+> DELETE : 
+ * http://localhost:8080/product/{id}
+  
+
+
