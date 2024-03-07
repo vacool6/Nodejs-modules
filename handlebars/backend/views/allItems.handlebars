@@ -1,14 +1,25 @@
-<ul>
-  {{#each data}}
-    <li style="border:1px solid red;margin:1rem;padding:0.25rem">
-      <strong>ID:</strong>
-      {{id}},
-      <strong>Product:</strong>
-      {{product}},
-      <strong>Price:</strong>
-      {{price}},
-      <strong>Quantity:</strong>
-      {{quantity}}
-    </li>
-  {{/each}}
-</ul>
+<div>
+  <ul>
+    {{#each data}}
+      <li style="border:1px solid red;margin:1rem;padding:0.25rem">
+        <strong>ID:</strong>
+        {{id}},
+        <strong>Product:</strong>
+        {{product}},
+        <strong>Price:</strong>
+        {{price}},
+        <strong>Quantity:</strong>
+        {{quantity}}
+        <br />
+        <a href="product/{{id}}">More info</a>
+        <br />
+        <form action="/product/{{id}}?_method=DELETE" method="post">
+          <button type="submit">Delete Resource</button>
+        </form>
+      </li>
+    {{/each}}
+  </ul>
+  <br />
+  <a href="add-product"> <button>Add a new product</button></a>
+
+</div>
