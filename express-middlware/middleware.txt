@@ -1,0 +1,13 @@
+Reference: https://expressjs.com/en/guide/writing-middleware.html
+
+Error handling middleware: Errors can be encountered in scenarios like
+
+- Incomplete data.
+- Connecting to DB.
+- Interacting with API's.
+- External service, libraries etc...
+
+Its important to handle errors by considering all the possible scenarios.
+
+Custom error handling reference:
+https://expressjs.com/en/guide/error-handling.html#error-handling
