@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "product": "Glasses",
+    "price": 3450,
+    "quantity": 50,
+    "description": "Get this product for",
+    "_locals": {}
+  },
+  {
+    "id": 513,
+    "product": "Glasses",
+    "price": 3450,
+    "quantity": 54,
+    "description": "Get this product for"
+  },
+  {
+    "id": 56,
+    "product": "new product",
+    "price": 3450,
+    "quantity": 50,
+    "description": "This is a new product",
+    "_locals": {}
+  }
+]
