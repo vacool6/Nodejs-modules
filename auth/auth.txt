@@ -1,0 +1,29 @@
+Authentication: Process of verifying who the user is. Typically an user
+is authenticated with username & password combo.
+
+Authorization: Verifying what a specific user has access to. We authorize
+after authenticating a user.
+
+Hashing: In order to store a password in the DB we hash it first then
+store it.
+
+Password safe hashing functions: 
+1. One way functions that are infeasible to inverse.
+2. Small change/s yields to larger change in the output.
+3. Unlikely to find same outputs for same value.
+
+Salts: Are the extra step we do before hashing that make guessing
+passwords harder. Salts are random values added to actual password before
+hashing it.
+
+Ex: cat56$ds(salt) + abcde(password) = cat56$dsabcde
+
+Bcrypt: Blowfish cipher is a password hashing function.
+npm i bcrypt or bcryptjs
+
+* Auth strategies : https://www.passportjs.org/packages/
+
+Implemented strategies:
+1. Local strategy (Session based): https://github.com/vacool6/passportLocal-Reactjs
+2. Token strategy (JWT): Frontend | https://github.com/vacool6/passportJWT
+                         Backend | https://github.com/vacool6/JWTfrontend
