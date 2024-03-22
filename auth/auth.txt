@@ -27,3 +27,5 @@ Implemented strategies:
 1. Local strategy (Session based): https://github.com/vacool6/passportLocal-Reactjs
 2. Token strategy (JWT): Frontend | https://github.com/vacool6/passportJWT
                          Backend | https://github.com/vacool6/JWTfrontend
+
+Other strategies: OAuth, Biometric, LDAP(Lightweight Directory Access Protocol) etc...
