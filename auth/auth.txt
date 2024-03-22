@@ -29,3 +29,9 @@ Implemented strategies:
                          Backend | https://github.com/vacool6/JWTfrontend
 
 Other strategies: OAuth, Biometric, LDAP(Lightweight Directory Access Protocol) etc...
+
+Session VS Token based auth:
+
+In essence, session-based authentication relies on server-side storage for managing user sessions, while JWT-based authentication uses digitally 
+signed tokens to authenticate users, eliminating the need for server-side storage and enabling stateless authentication. Each has its strengths 
+and weaknesses, and the choice depends on the specific requirements and constraints of the application.
